@@ -1,0 +1,70 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class Clases.CConexion
+class Clases.CGastos
+class Clases.CLogin
+class Clases.CNewUsuer
+class com.mycompany.co.expenses.CoExpenses
+class com.mycompany.co.expenses.FormLogin
+class com.mycompany.co.expenses.Gastos
+class java.sql.CallableStatement
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class javax.swing.JPasswordField
+class javax.swing.JTable
+class javax.swing.JTextField
+class javax.swing.table.DefaultTableModel
+class javax.swing.table.TableModel
+class javax.swing.table.TableRowSorter
+Clases.CConexion ..> java.sql.Connection
+Clases.CConexion ..> java.sql.DriverManager
+Clases.CConexion ..> java.sql.SQLException
+Clases.CConexion ..> javax.swing.JOptionPane
+Clases.CGastos ..> java.sql.CallableStatement
+Clases.CGastos ..> java.sql.ResultSet
+Clases.CGastos ..> java.sql.SQLException
+Clases.CGastos ..> java.sql.Statement
+Clases.CGastos ..> javax.swing.JOptionPane
+Clases.CGastos ..> javax.swing.JTable
+Clases.CGastos ..> javax.swing.JTextField
+Clases.CGastos ..> javax.swing.table.DefaultTableModel
+Clases.CGastos ..> javax.swing.table.TableModel
+Clases.CGastos ..> javax.swing.table.TableRowSorter
+Clases.CLogin ..> com.mycompany.co.expenses.Gastos
+Clases.CLogin ..> java.sql.PreparedStatement
+Clases.CLogin ..> java.sql.ResultSet
+Clases.CLogin ..> javax.swing.JOptionPane
+Clases.CLogin ..> javax.swing.JPasswordField
+Clases.CLogin ..> javax.swing.JTextField
+Clases.CNewUsuer ..> com.mycompany.co.expenses.Gastos
+Clases.CNewUsuer ..> java.sql.Connection
+Clases.CNewUsuer ..> java.sql.PreparedStatement
+Clases.CNewUsuer ..> java.sql.ResultSet
+Clases.CNewUsuer ..> java.sql.SQLException
+Clases.CNewUsuer ..> java.sql.Statement
+Clases.CNewUsuer ..> javax.swing.JOptionPane
+Clases.CNewUsuer ..> javax.swing.JPasswordField
+Clases.CNewUsuer ..> javax.swing.JTextField
+com.mycompany.co.expenses.FormLogin ..> java.lang.SuppressWarnings
+com.mycompany.co.expenses.FormLogin ..> Clases.CConexion
+com.mycompany.co.expenses.FormLogin ..> Clases.CLogin
+com.mycompany.co.expenses.FormLogin ..> java.sql.Connection
+com.mycompany.co.expenses.FormLogin ..> java.sql.PreparedStatement
+com.mycompany.co.expenses.FormLogin ..> java.sql.SQLException
+com.mycompany.co.expenses.FormLogin ..> java.util.logging.Level
+com.mycompany.co.expenses.FormLogin ..> java.util.logging.Logger
+com.mycompany.co.expenses.FormLogin --|> javax.swing.JFrame
+com.mycompany.co.expenses.FormLogin ..> javax.swing.JOptionPane
+com.mycompany.co.expenses.Gastos ..> java.lang.SuppressWarnings
+com.mycompany.co.expenses.Gastos ..> Clases.CConexion
+com.mycompany.co.expenses.Gastos ..> Clases.CGastos
+com.mycompany.co.expenses.Gastos --|> javax.swing.JFrame
+@enduml
